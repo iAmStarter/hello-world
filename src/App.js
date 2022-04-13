@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
-import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRPerentInput from './components/FRPerentInput';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import HoverCounter from './components/HoverCounter';
+import ClickCounter from './components/ClickCounter';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <RefsDemo />
+      <ClickCounter/>
+      <HoverCounter/>
       </div>
     )
   }
