@@ -6,13 +6,17 @@ import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
 import HoverCounter from './components/HoverCounter';
 import ClickCounter from './components/ClickCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
-      <ClickCounter/>
-      <HoverCounter/>
+        <ClickCounterTwo />
+        <HoverCounterTwo />
+        <User name={(isLoggedIn) => isLoggedIn ? 'Theerasak': 'Guest'}/>
       </div>
     )
   }
